@@ -35,7 +35,6 @@ def callAsProcesses( func, kwargsList ):
    assert all( hasArgsList ) == any( hasArgsList )    # no mixing "args" presence
 
    allProcesses = set()
-   childPid = 0
 
    for kwargs in kwargsList.copy():
       args = kwargs.pop( "args", [] )
